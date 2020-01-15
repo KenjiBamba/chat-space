@@ -16,12 +16,11 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
-|member|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 
 ### Association
-- has_many :users
+- has_many :groups_users
+- has_many :users,  through:  :groups_userss
 - has_many :comments
 
 
@@ -39,7 +38,8 @@
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|image|text||
+|text|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
