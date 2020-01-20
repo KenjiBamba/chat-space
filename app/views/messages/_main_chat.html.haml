@@ -1,0 +1,38 @@
+.main_chat
+  .main_chat__group_info
+    .main_chat__group_info__left_box
+      %p.main_chat__group_info__left_box__group_name
+        TEST
+      %p.main_chat__group_info__left_box__member
+        MEMBER : masa
+    .main_chat__group_info__right_box
+      .main_chat__group_info__right_box__edit_btn
+        =link_to "Edit"
+
+  .main_chat__message_list
+    .main_chat__message_list__users1
+      .main_chat__message_list__users1__info
+        %p.main_chat__message_list__users1__info__name
+          masa
+        %p.main_chat__message_list__users1__info__daytime
+          2019/11/20(Wed) 17:31:04
+      %p.mail_chat__message_list__comment1
+        こんにちは！
+    .main_chat__message_list__users2
+      .main_chat__message_list__users2__info
+        %p.main_chat__message_list__users2__info__name
+          masa
+        %p.main_chat__message_list__users2__info__daytime
+          2019/11/20(Wed) 17:31:04
+      %p.mail_chat__message_list__comment2
+        こんにちは！
+
+
+  .main_chat__message_form
+    %form.new_message
+      .input_box
+        %input{type: "text", class: "input_box__text", placeholder: "type a message"}
+        %label{class: "input_box__image"}
+          =icon('fas', 'image')
+          %input{type: "file", class: "input_box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}

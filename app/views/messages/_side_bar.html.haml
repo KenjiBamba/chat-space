@@ -1,0 +1,16 @@
+.side_bar
+  .side_bar__user_name
+    .top_items
+      %p.top_items__name
+        masa
+      %p.top_items__icon
+        = link_to "#", class: "edit-icon" do
+          = icon('fas','edit')
+        = link_to "#", class: "cog-icon" do
+          = icon('fas', 'cog')
+  .side_bar__group
+    .side_bar__group__list
+      %p.side_bar__group__list__name
+        名前
+      %p.side_bar__group__list__message
+        コメント

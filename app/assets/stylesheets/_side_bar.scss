@@ -1,0 +1,50 @@
+.side_bar{
+  width:300px;
+  background-color: #253141;
+  &__user_name {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .top_items{
+      height: 16px;
+      width: 260px;
+      margin: 20px;
+      display: flex;
+      &__name{
+        width: 200px;
+        color: #ffffff;
+        font-size: 16px;
+      }
+      &__icon{
+        width: 60px;
+        .edit-icon{
+          color: #ffffff;
+          text-align: right;
+          text-decoration: none;
+        }
+        .cog-icon{
+          color: #ffffff;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  &__group{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    &__list{
+      height: 91px;
+      padding: 20px;
+      &__name{
+        color: #ffffff;
+        font-size: 15px;
+        margin: 0px 0px 5px;
+        //margin、paddingは[上][左右][下]
+      }
+      &__message{
+        color: #ffffff;
+        font-size: 11px;
+      }
+    }
+  }
+}
