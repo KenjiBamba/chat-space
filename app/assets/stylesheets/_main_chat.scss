@@ -38,43 +38,23 @@
     background-color: #fafafa;
     padding: 35px 0px 0px 40px;
     //[上][右][下][左]
-    &__users1{
+    .message{
       margin-bottom: 46px;
-      &__info{
+      .upper-message{
         display: flex;
-        &__name{
+        &__user-name{
           color: #333333;
           font-size: 16px;
           margin-bottom: 12px;
         }
-        &__daytime{
+        &__date{
           color: #999999;
           font-size: 12px;
           margin-left: 20px;
         }
-      }
-    }  
-    &__comment1{
-      color: #434a54;
-      font-size: 14px;
+      } 
     }
-    &__users2{
-      margin-bottom: 46px;
-      &__info{
-        display: flex;
-        &__name{
-          color: #333333;
-          font-size: 16px;
-          margin-bottom: 12px;
-        }
-        &__daytime{
-          color: #999999;
-          font-size: 12px;
-          margin-left: 20px;
-        }
-      }
-    }  
-    &__comment2{
+    &__lower-message{
       color: #434a54;
       font-size: 14px;
     }
