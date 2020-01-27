@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
+    config.time_zone = 'Tokyo'
+    
     config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
     config.generators do |g|
       g.stylesheets false

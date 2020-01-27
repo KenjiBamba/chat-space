@@ -37,6 +37,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 0px 0px 40px;
+    overflow: scroll;
     //[上][右][下][左]
     .message{
       margin-bottom: 46px;
