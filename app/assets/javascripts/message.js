@@ -53,7 +53,6 @@ $('#new_message').on('submit', function(e){
  })
   .done(function(data){
     var html = buildHTML(data);
-    console.log("AAA")
     $('.main_chat__message_list').append(html);      
     $('form')[0].reset();
     $('.main_chat__message_list').animate({ scrollTop: $('.main_chat__message_list')[0].scrollHeight});
