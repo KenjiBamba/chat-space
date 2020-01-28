@@ -4,7 +4,7 @@
       %p.main_chat__group_info__left_box__group_name
         = @group.name
       %p.main_chat__group_info__left_box__member
-        MEMBER
+        MEMBER:  
         - @group.group_users.each do|group_user|
           = group_user.user.name
 
