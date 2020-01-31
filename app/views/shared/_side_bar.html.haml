@@ -2,7 +2,8 @@
   .side_bar__user_name
     .top_items
       .top_items__name
-        masa
+        = current_user.name
+        //修正しました。
       .top_items__icon
         = link_to new_group_path do
           %i.fa.fa-edit.edit-icon
